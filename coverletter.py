@@ -14,6 +14,7 @@ def find_job_info(link):
     soup = BeautifulSoup(response.text, "html.parser")
     job_title = soup.select(".jobsearch-JobInfoHeader-title")[0].get_text()
     company_name = soup.select(".jobsearch-InlineCompanyRating div")[0].get_text()
+    job_description = soup.select(".jobsearch-JobComponent-description")[0].get_text()
 
     write_letter(job_title, company_name)
 
