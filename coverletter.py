@@ -1,11 +1,13 @@
 import requests
 from bs4 import BeautifulSoup
 
-def get_user_input():
+def get_url():
+    # Get's the website URL
     link = input("Enter job listing URL: ")
     find_job_info(link)
 
 def find_job_info(link):
+    # Scrapes the page to get the company name and job title
     response = requests.get(link)
     soup = BeautifulSoup(response.text, "html.parser")
     job_title = soup.select(".jobsearch-JobInfoHeader-title")[0].get_text()
@@ -14,6 +16,7 @@ def find_job_info(link):
     write_letter(job_title, company_name)
 
 def write_letter(position, company):
+    # Creates the letter
     base_letter = '''Jake Reck
 (860) 933-0862
 jakereck@gmail.com
@@ -45,11 +48,12 @@ I look forward to hearing from you,
     Jake Reck
     '''.format(position=position, company=company)
 
-    f = open('cover.doc', 'w')
+    filename = r'C:\Users\jaker\Desktop\coverletters\{company}.doc'.format(company=company)
+    f = open(filename, 'w')
     f.write(base_letter)
     f.close()
 
 def main():
-    get_user_input()
+    get_url()
 
 main()
