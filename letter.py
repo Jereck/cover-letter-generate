@@ -6,11 +6,14 @@ jakereck@gmail.com
 
 Dear Whomever it may concern,
 
-I saw your ad on Indeed and I feel like I would be a perfect fit
-for the {position} position at {company}. I have been teaching myself
-software development over the last 3 years, but my passion for programming
-started many years ago when I was a sophmore in high school and took my first
-C++ class. 
+    Hi! My name is Jake Reck. My goal in life is to either be the antagonist
+or protagonist in Elon Musk's rise to power. But, for the time being, I will 
+settle on being the every-day software developer.
+
+    I would be a perfect fit for the {position} position at {company}. 
+I have been teaching myself software development over the last 3 years, 
+but my passion for programming started many years ago when I was a 
+sophmore in high school and took my first C++ class. 
 
 My passion was sparked again when I moved out to Washington state and was looking
 for ways to make some extra cash. My journey started out in web development languages;
